@@ -1,14 +1,19 @@
 <div>
 
     <!--TODO #7-->
-    <p>Number a: </p>
+    <p>Number a: <input type="number" ng-model="nmba"/></p>
 
-    <p>Number b: </p>
+    <p>Number b: <input type="number" ng-model="nmbb"/></p>
 
-    <p>
-        <!--TODO Button for calculating values-->
-        
-    </p>
+
+    <!--TODO Button for calculating values-->
+
+    <div>
+        <p>
+            <a class="btn btn-primary btn-lg" role="button" ng-click="calculate()">calculate</a>
+        </p>
+    </div>
+
 
     <p> a + b = <span>{{op1}}</span></p>
 
