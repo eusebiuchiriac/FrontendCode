@@ -1,0 +1,73 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">Add employee</h2>
+    </div>
+    <div class="panel-body">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    First Name:
+                    <input type="text" ng-model="prenumeangajat" class="form-control">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    Last Name:
+                    <input type="text" ng-model="numeangajat" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                Email:
+                <input type="text" ng-model="emailangajat" class="form-control">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-group">
+                Phone Number:
+                <input type="text" ng-model="telefonangajat" class="form-control">
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    Age:
+                    <input type="number" ng-model="varstaangajat" class="form-control">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    City:
+                    <input type="text" ng-model="orasangajat" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-7">
+
+                    <button class="btn btn-default" ng-click="back()">Back</button>
+
+
+                    <button class="btn btn-default" ng-click="resetInputs()">Reset</button>
+
+
+                    <button class="btn btn-default" ng-click="addUser()" >Save</button>
+
+
+                    <button class="btn btn-default" ng-click="toggleListShow()">Show/Hide User List</button>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div ng-include="'views/userlist.html'" ng-show="userListShow"></div>
